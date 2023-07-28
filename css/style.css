@@ -1,0 +1,1181 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Grenze+Gotisch:wght@300;400;500;700&family=Lato:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@400;500&family=Rubik+Dirt&display=swap');
+/* font-family: 'Fredericka the Great', cursive;
+font-family: 'Grenze Gotisch', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Dirt', cursive; */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 20px;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffd300;
+}
+
+a:active {
+    color: #ffd300;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #17191e;
+    font-weight: 800;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #17191e;
+    font-weight: 800;
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #17191e;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #17191e;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.7rem;
+}
+
+.specialTitle {
+    color: #fafafa;
+    font-size: auto;
+}
+
+.textoDestacado {
+    color: #ffd300;
+    font-size: auto;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.button {
+    background-color: #ffd300;
+    color: black;
+    border-radius: 25px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #f3d73a;
+    color: #000000;
+}
+
+.linkTitleSection {
+    text-decoration: none;
+    font-size: auto;
+
+}
+
+.linkTitleSection:hover {
+    text-decoration: underline #ffd300;
+
+}
+
+/**** LEFTBAR ****/
+
+
+.leftBar {
+    background-color: #202028;
+    position: sticky;
+    height: 100vh !important;
+    top: 0%;
+    left: 0%;
+    grid-area: leftBar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15%;
+}
+
+
+.contentLeftBar {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+
+.mainLogo {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainLogo img {
+    width: 150px;
+
+}
+
+header {
+    background-color: #202028;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+/* NAV */
+.leftBar {
+    background-color: #202028;
+
+}
+
+nav {
+    background-color: #202028;
+    grid-area: nav;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #d2d2d2;
+}
+
+header nav ul {
+    margin-top: 25%;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+
+}
+
+/* SOCIAL MEDIA  LEFTBAR*/
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socialMedia img {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* MENU TABLET & MOBILE */
+
+.menuHamburguesa {
+    background-color: #202028;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: menuHamburguesa;
+    width: 100%;
+    cursor: pointer;
+    position: relative; 
+    margin: 0px;
+    padding: 0%;
+}
+
+.desplegable {
+    display: none;
+}
+
+.menuHamburguesaLogo img {
+    width: 80px;
+    padding: 0px 15px;
+}
+
+#btnMenuHamburguesa{
+    display: none;
+}
+
+.icon-menu{
+    color: white;
+}
+.contenedorMenuHamburguesa {
+    position: absolute;
+    background-color: #202028;
+    color: #ffffff;
+    width: 30%;
+    height: 100vh;
+    top: 0;
+    right: 0; 
+    opacity: 0;
+    visibility: hidden;
+    z-index: 50;
+   
+    
+}
+
+#btnMenuHamburguesa:checked ~ .contenedorMenuHamburguesa{
+    opacity: 1;
+    visibility: visible;
+}
+.desplegable{
+    width: 100%;
+    max-width: 100vw;
+    background: #202028;
+    height: 90vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 60;
+    opacity: 1;
+    display: block;
+}
+
+#btnMenuHamburguesa:checked ~ .contenedorMenuHamburguesa .desplegable{
+    transform: translateX(0%);
+}
+.desplegable nav{
+    transform: translateY(25%);
+    display: block;
+    
+    
+}
+
+.desplegable nav ul{
+    list-style: none;
+    font-size: 18px;
+    
+}
+
+.desplegable nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #fafafa;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    z-index: 60;
+}
+.desplegable nav a:hover{
+    color: #ffd300;
+}
+.desplegable label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.cerrarMenu {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+}
+
+.desplegable:target {
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+}
+
+#btnCerrarMenu:target .contenedorMenuHamburguesa .desplegable{
+    /* transform: translateX(100%); */
+    visibility: hidden!important;
+    opacity: 0;
+}
+
+
+/* FOOTER */
+footer {
+    background-image: url("../assets/img/footer.png");
+    background-position: 50% 00%;
+    min-height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    background-color: #000000;
+    grid-area: footer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5%;
+
+
+}
+
+.footerSocialMedia {
+    display: flex;
+    gap: 20px;
+}
+
+footer img {
+    width: 26px;
+    height: 26px;
+    box-shadow: 2px 2px 2px 1px rgba;
+}
+
+
+/************* HOME SECTIONS *********/
+
+.gridHome {
+    margin: 0px;
+    padding: 0px;
+    background-color: #202028;
+    display: grid;
+    grid-template-areas:
+        " leftBar heroHome"
+        " leftBar ctaNosotros"
+        " leftBar ctaRutinas"
+        " leftBar ctaApp"
+        " leftBar ctaCursos"
+        " leftBar ctaContacto"
+        " leftBar footer"
+    ;
+
+}
+
+/* heroHome */
+
+.contenedorHeroHome {
+    padding: 0px;
+    margin: 0px;
+    position: relative; 
+    overflow: hidden; 
+    object-fit: cover;
+
+
+}
+
+.heroHome {
+    grid-area: heroHome;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.videoHome {
+    object-fit: fill;
+    width: 100%;
+    margin: 0px;
+}
+
+.contentHeroHome {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    height: auto;
+    /* TODO : arreglar responsive   */
+    margin-top: -20%;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* ctaNosotros */
+
+.ctaNosotros {
+
+    grid-area: ctaNosotros;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+.imgNosotros {
+    width: 50vw;
+    background-image: url("../assets/img/gimnasio-3.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.contentNosotros {
+    /* background-image: url("../assets/img/fondoHomeNosotros.png"); */
+    background-color: #ededed;
+    background-size: cover;
+    opacity: 1;
+    width: 50%;
+    padding: 30px;
+    /*corregir , se va del 50%*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ctaRutinas */
+.ctaRutinas {
+    background-image: url("../assets/img/homeRutinas.jpg");
+    background-position: 50% 35%;
+    grid-area: ctaRutinas;
+
+
+
+}
+
+.contentCtaRutinas {
+    width: 30%;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5%;
+    justify-content: center;
+
+
+}
+.textPadding{
+    max-width: 90%;
+}
+
+/* ctaApp */
+
+.ctaApp {
+    background-color: #d2d2d2;
+    grid-area: ctaApp;
+    display: flex;
+    width: 100%;
+    height: 80vh;
+}
+
+.contentCtaApp {
+    /* background-image: url("../assets/img/fondoHomeNosotros.png"); */
+    background-color: #ededed;
+    background-size: cover;
+    opacity: 0.8;
+    width: 50vw;
+    padding: 30px;
+    /*corregir , se va del 50%*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgApp {
+    width: 50%;
+    background-image: url("../assets/img/homeApp.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.benefitsApp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 5%;
+
+}
+
+.benefitCard {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    line-height: 1;
+    gap: 10px;
+}
+
+.icon {
+    width: 36px;
+    height: 36px;
+}
+
+.imageBenefitCard {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contentBenefitCard h4 {
+    margin: 5px;
+    font-size: inherit;
+
+}
+
+.contentBenefitCard p {
+    margin: 5px;
+    line-height: 1.1;
+    /* font-size: 0.95rem; */
+}
+
+.contentCtaApp a {
+    margin-top: 5%;
+
+}
+
+
+/* ctaCursos */
+
+.ctaCursos {
+    background-image: url("../assets/img/cursos2.jpg");
+    object-fit: fill;
+    background-position: 80% 35%;
+    grid-area: ctaCursos;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.contentCtaCursos {
+    width: 40%;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5%;
+    justify-content: center;
+}
+
+/* ctaContacto */
+.ctaContacto {
+    background-color: black;
+    grid-area: ctaContacto;
+    padding: 70px;
+}
+
+
+
+
+
+
+/************ RUTINAS SECTIONS **********/
+
+
+/* grid principal de pagina */
+.gridRutinas {
+    margin: 0px;
+    background-color: #202028;
+    display: grid;
+    grid-template-areas: "leftBar galeriaActividades"
+
+}
+
+/* galeria de actividades */
+
+/* TODO: VER RESPONSIVE DE GRID GALERIA */
+
+.galeriaActividades {
+    grid-area: galeriaActividades;
+    background-color: #ffd300;
+    width: 85vw;
+    height: auto;
+    margin: 0px;
+    display: grid;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.contentGaleriaActividades {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 20%);
+    gap: 0px;
+}
+
+
+.imgGaleriaRutinas {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* actividades */
+.cardio {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    position: relative;
+    display: inline-block;
+
+}
+
+.boxeo {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    width: fill;
+}
+
+.natacion {
+    grid-column: 5/7;
+    width: fit-content;
+}
+
+.kids {
+    grid-row: 5/6;
+    grid-column: 1/3;
+    width: fit-content;
+
+}
+
+.mayores {
+    grid-column: 3/5;
+    grid-row: 5/6;
+    width: fit-content;
+
+}
+
+.outdoor {
+    grid-row: 5/6;
+    grid-column: 5/7;
+    width: fit-content;
+
+}
+
+.cuerpoMente {
+    grid-row: 3/5;
+    grid-column: 3/7;
+    width: fit-content;
+
+}
+
+.rehabilitacion {
+    grid-column: 5/7;
+    width: fit-content;
+    position: relative;
+    display: inline-block;
+}
+
+.crossfit {
+    width: fit-content;
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+.home {
+    grid-column: 1/3;
+    width: fit-content;
+}
+
+.musculacion {
+    grid-column: 3/5;
+    grid-row: 2/3;
+
+}
+
+/* actividades on hover */
+
+.textoSuperpuesto {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 100%;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    margin: 0px;
+    color: white;
+}
+
+.contenedor {
+    filter: grayscale(50%);
+}
+
+.contenedor:hover {
+    filter: grayscale(100%);
+    z-index: 20;
+}
+
+.contenedor:hover .textoSuperpuesto {
+    /* filter: grayscale(100%); */
+    opacity: 1;
+    color: #ffffff;
+    /*TODO: bsucar la forma que sea #ffd300*/
+    z-index: 30;
+    text-shadow: 1px 1px 2px black;
+    ;
+
+}
+
+
+/************************* PAGINA CURSOS ****************************/
+
+/* TODO: coregir scroll lateral */
+
+.gridCursos {
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-areas: "leftBar galeríaCursos";
+    height: auto;
+
+}
+
+.galeriaCursos {
+    grid-area: galeriaCursos;
+    width: 85vw;
+}
+
+.contentGaleriaCursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.imgGaleriaCursos {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/********************** PAGINA NOSOTROS *********************/
+
+.gridNosotros {
+    display: grid;
+    grid-template-areas:
+        "leftBar contenidoNosotros";
+    margin: 0px;
+    padding: 0px;
+
+}
+.contenidoNosotros{
+    grid-area: contenidoNosotros;
+}
+
+.heroNosotros {
+    grid-area: heroNosotros;
+    width: 85vw;
+    height: 75vh;
+    background-image: url("../assets/img/nosotrosHero2.jpg");
+    background-size: 100%;
+    background-position: 30% 30%;
+    display: flex;
+    align-items: center;
+}
+
+.bannerHistoria1 {
+    grid-area: bannerHistoria1;
+    width: 85vw;
+    display: flex;
+}
+
+.imgBannerHistoria1 {
+    width: 65%;
+    background-image: url("../assets/img/bannerNosotros1.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.imgBannerHistoria2 {
+    width: 65%;
+    background-image: url("../assets/img/bannerNosotros2.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.bannerHistoria2 {
+    grid-area: bannerhistoria2;
+    width: 85vw;
+    display: flex;
+}
+
+.contentBanner {
+
+    background-color: #ededed;
+    background-size: cover;
+    opacity: 1;
+    width: 50vw;
+    padding: 30px;
+    /*corregir , se va del 50%*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionVideoNosotros {
+    grid-area: videoNostros;
+    width: 85vw;
+
+}
+
+.videoNosotros {
+    object-fit: fill;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********* CONTACT PAGE ********/
+
+/* grid principal */
+
+.gridContacto {
+    margin: 0px;
+    background-color: #000000;
+    display: grid;
+    grid-template-areas: "leftBar datosYFormularioContacto"
+
+}
+
+.datosYFormularioContacto {
+    grid-area: datosYFormularioContacto;
+    width: 85vw;
+    padding: 0%;
+    margin: 0%;
+    height: auto;
+    /* overflow: scroll; */
+
+
+}
+
+.datosYFormularioContacto p {
+    color: #b4b4b4;
+    font-size: 0.8rem;
+}
+
+/* hero */
+
+
+.contenedorFormularioContacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contenedorDatosContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.datosContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+    padding: 0px;
+    row-gap: 10px;
+    column-gap: 10px;
+
+
+}
+
+.info {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+}
+
+.info img {
+    display: flex;
+    align-items: flex-start;
+    opacity: 25%;
+    width: 26px;
+    height: 26px;
+}
+
+.contentTarjetaConctacto h4 {
+    margin: 5px;
+
+}
+
+.contentTarjetaContacto p {
+    margin: 5px;
+    line-height: 1;
+    font-size: 0.5rem;
+}
+
+
+/* formulario de contacto */
+.datosYFormularioContacto h1 {
+    text-align: center;
+}
+
+.formularioContacto {
+    width: 45%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 0px;
+}
+
+.formulario .button {
+    width: 18%;
+}
+
+
+.formularioContacto form label {
+    display: none;
+}
+
+.formularioContacto form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.inputFormulario {
+    background-color: #202028;
+    width: 80%;
+    height: 2rem;
+    border: 0px;
+    padding: 5px;
+}
+
+
+.inputFormulario:focus {
+    background-color: #222222;
+    border: 0px;
+    /*  TODO: arreglar en focus no se elimina el borde */
+
+}
+
+
+/* MEDIA QUERys */
+@media(min-width:1024px) {
+    .menuHamburguesa {
+        display: none;
+
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .leftBar {
+        display: none;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .gridHome {
+        margin: 0px;
+        background-color: #202028;
+        display: grid;
+        grid-template-areas:
+            "menuHamburguesa"
+            " heroHome"
+            " ctaNosotros"
+            " ctaRutinas"
+            " ctaApp"
+            " ctaCursos"
+            " ctaContacto"
+            " footer"
+        ;
+    }
+    
+
+    .contentHeroHome{
+        position: relative;
+        justify-content: center;
+        
+    }
+
+    .gridRutinas {
+        margin: 0px;
+        
+        background-color: #202028;
+        display: grid;
+        grid-template-areas:
+            "menuHamburguesa"
+            "galeriaActividades"
+
+    }
+
+    .galeriaActividades {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    
+
+
+    .gridCursos {
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-areas:
+            "menuHamburguesa"
+            " galeríaCursos";
+        height: auto;
+
+    }
+
+    .galeriaCursos {
+        width: 100vw;
+        
+    }
+
+    .contentGaleriaCursos{
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+    }
+
+    .gridNosotros {
+        display: grid;
+        grid-template-areas:
+            "menuHamburguesa"
+            "contenidoNosotros";
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .heroNosotros {
+        width: 100vw;
+    }
+
+    .bannerHistoria1 {
+        width: 100vw;
+    }
+
+    .bannerHistoria2 {
+        width: 100vw;
+    }
+
+    .videoNosotros {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 0.5rem;
+    }
+
+    .imgApp {
+        display: none;
+    }
+
+    .contentCtaApp {
+        width: 100vw;
+    }
+
+    /* pagina contacto */
+    .gridContacto {
+        display: grid;
+        grid-template-areas:
+            "menuHamburguesa"
+            "datosYFormularioContacto";
+    }
+
+    .contenedorFormularioContacto {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        
+
+    }
+
+    .formularioContacto{
+        width: 80%;
+    }
+    
+    .datosYFormularioContacto{
+        width: 100%;
+    }
+
+
+    .contenedorDatosContacto{
+        margin-top: 50px;
+    }
+
+    .contentCtaRutinas {
+        width: 100%
+    }
+
+    .contentCtaCursos {
+        width: 100%
+    }
+
+    .contentBanner{
+        width: 100%;
+    }
+.heroNosotros{ 
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+    .imgBannerHistoria1{
+        display: none;
+    }
+    .imgBannerHistoria2{
+        display: none;
+    }
+
+}
