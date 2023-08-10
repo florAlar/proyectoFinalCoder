@@ -1,0 +1,65 @@
+@import "global";
+
+
+main {
+    section {
+        width: 100vw;
+
+        .contentGaleriaCursos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 95px;
+
+            .contenedor {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+
+                .imgGaleriaCursos {
+                    width: 100%;
+                    height: 100%;
+
+                    
+                }               
+
+                
+            }
+
+            .textoSuperpuesto {
+                position: absolute;
+                top: 0%;
+                width: 100%;
+                height: 100%;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: 900;
+                opacity: 0;
+                visibility: hidden;
+                margin: 0px;            
+                color: $colorDestacado;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: rgba($color: #000000, $alpha: 0.5);
+                transition: all 500ms ease-out;
+    
+                
+                
+            }
+    
+            .contenedor {
+                filter: grayscale(50%);
+            }
+    
+            .contenedor:hover .textoSuperpuesto {
+               opacity: 1;            
+                text-shadow: 1px 1px 2px black;
+                          
+                visibility: visible;            
+            }
+        }
+
+           
+    }
+}

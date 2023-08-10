@@ -1,0 +1,132 @@
+@import "global";
+
+.datosYFormularioContacto h2 {
+    margin-top: 90px;
+}
+
+.datosYFormularioContacto {
+    width: 100vw;
+    padding: 0%;
+    margin: 0%;
+    height: auto;
+    background-color: $fondoOscuro2;
+
+
+
+    .contenedorFormularioContacto {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        background-color: $fondoOscuro2;
+
+        .contenedorDatosContacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .datosContacto {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: start;
+                align-items: start;
+                padding: 0px;
+                row-gap: 10px;
+                column-gap: 10px;
+
+                .datosYFormularioContacto p {
+                    color: #b4b4b4;
+
+                }
+
+                .info {
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    gap: 10px;
+                }
+
+                .info img {
+                    display: flex;
+                    align-items: flex-start;
+                    opacity: 25%;
+                    width: 26px;
+                    height: 26px;
+                }
+
+                .contentTarjetaConctacto h4 {
+                    margin: 5px;
+
+                }
+
+                .contentTarjetaContacto p {
+                    margin: 5px;
+                    line-height: 1;
+                    font-size: 0.5rem;
+                }
+
+            }
+        }
+
+        .formularioContacto {
+            width: 45%;
+
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                border: 0px;
+
+            }
+
+
+        }
+
+        .inputFormulario {
+            background-color: $fondoOscuro;
+            width: 80%;
+            height: 2rem;
+            border: 0px;
+            padding: 5px;
+
+        }
+
+
+
+        .formularioContacto form label {
+            display: none;
+        }
+
+        .formularioContacto form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+
+
+
+        .inputFormulario:focus {
+            background-color: #222222;
+            border: 0px;
+        }
+
+        .formulario .button {
+            width: 18%;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* formulario de contacto */

@@ -1,832 +1,1388 @@
-/* import de fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Grenze+Gotisch:wght@300;400;500;700&family=Lato:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@400;500&family=Rubik+Dirt&display=swap');
-
-/* 
-    Colores: 
-        fondo claro: #fafafa
-        amarillo: #ffd300
-        fondo oscuro #202028
-
-    */
-
-
-/* titulos y textos */
-
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Grenze+Gotisch:wght@300;400;500;700&family=Lato:wght@400;700&family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@400;500&family=Rubik+Dirt&display=swap");
 .link {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 a {
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
-
-
 
 .link:hover {
-    color: #ffd300;
-
+  color: #ffd300;
 }
 
-/* p{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-} */
-
+/* TITULOS */
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #17191e;
-    font-weight: 800;
-    font-size: 6vw;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 6vw;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #17191e;
-    font-weight: 800;
-    font-size: 4.5vw;
-
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4.5vw;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #17191e;
-    font-weight: 800;
-    font-size: 4vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4vw;
 }
 
 h4 {
-    font-family: 'Montserrat', sans-serif;
-    color: #17191e;
-    font-weight: 700;
-    font-size: 3vw;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 3vw;
 }
 
+/* TITULOS ESPECIALES */
 .specialTitle {
-    color: #fafafa;
-    font-size: auto;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: #fafafa;
+  font-size: auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .textoDestacado {
-    color: #ffd300;
-    font-size: auto;
-
+  color: #ffd300;
+  font-size: auto;
 }
 
 .linkTitleSection {
-    text-decoration: none;
-    font-size: auto;
-
+  text-decoration: none;
+  font-size: auto;
 }
 
 .linkTitleSection:hover {
-    text-decoration: underline #ffd300;
-
+  text-decoration: underline #ffd300;
 }
 
-
-/* Botones */
-
+/* BOTONES */
 .button {
-    background-color: #ffd300;
-    color: black;
-    border-radius: 25px;
-    padding: 10px 15px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-top: 10px;
+  background-color: #ffd300;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 .button:hover {
-    background-color: #f3d73a;
-    color: #000000;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*************************************************  NAVBAR**********************************************************/
-.logo {
-    width: 85px;
-}
-
-
-/************************************************* FOOTER ***********************************************************/
-
-footer {
-    background-image: url("../assets/img/footer.png");
-    background-position: 50% 00%;
-    min-height: 70vh;
-    width: 100%;
-    object-fit: cover;
-    background-color: #000000;
-    grid-area: footer;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 5%;
-
-
-}
-
-.footerSocialMedia {
-    display: flex;
-    gap: 20px;
-}
-
-footer img {
-    width: 26px;
-    height: 26px;
-    box-shadow: 2px 2px 2px 1px rgba;
-}
-
-
-
-
-
-/************************************************* PAGINA HOME ***********************************************************/
-
-/*SECCION HERO */
-.contenedorHeroHome {
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-    overflow: hidden;
-    object-fit: cover;
-
-
-}
-
-.heroHome {
-    grid-area: heroHome;
-    padding: 0px;
-    margin: 0px;
-
-}
-
-.videoHome {
-    object-fit: fill;
-    width: 100%;
-    margin: 0px;
-}
-
-.contentHeroHome {
-    padding: 0px;
-    margin: 0px;
-    position: relative;
-    height: auto;
-    margin-top: -20%;
-    z-index: 1;
-    text-align: center;
-    color: #fff;
-}
-
-
-
-/* SECCION CTA NOSOTROS */
-
-.ctaNosotros {
-
-    grid-area: ctaNosotros;
-    display: flex;
-    width: 100%;
-    height: 80vh;
-    margin: 0px;
-    padding: 0px;
-
-
-}
-
-.imgNosotros {
-    width: 50vw;
-    background-image: url("../assets/img/gimnasio-3.jpg");
-    background-size: cover;
-    background-position: center;
-
-}
-
-.contentNosotros {
-
-    background-color: #ededed;
-    background-size: cover;
-    opacity: 1;
-    width: 50%;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/* SECCION CTA RUTINAS */
-
-.ctaRutinas {
-    background-image: url("../assets/img/homeRutinas.jpg");
-    background-position: 50% 35%;
-    max-width: 100%;
-}
-
-.contentCtaRutinas {
-    width: 30%;
-    color: white;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-left: 5%;
-    justify-content: center;
-}
-
-.textPadding {
-    max-width: 90%;
-}
-
-/* SECCION CTA APP */
-
-
-.ctaApp {
-    background-color: #d2d2d2;
-    grid-area: ctaApp;
-    display: flex;
-    width: 100%;
-    height: 80vh;
-}
-
-.contentCtaApp {
-    /* background-image: url("../assets/img/fondoHomeNosotros.png"); */
-    background-color: #ededed;
-    background-size: cover;
-    opacity: 0.8;
-    width: 50vw;
-    padding: 30px;
-    /*corregir , se va del 50%*/
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.imgApp {
-    width: 50%;
-    background-image: url("../assets/img/homeApp.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.benefitsApp {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-top: 5%;
-
-}
-
-.benefitCard {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    line-height: 1;
-    gap: 10px;
+  background-color: #f3d73a;
+  color: #000000;
 }
 
 .icon {
-    width: 36px;
-    height: 36px;
+  width: 36px;
+  height: 36px;
 }
 
-.imageBenefitCard {
-    display: flex;
-    align-items: flex-start;
+nav .logo {
+  width: 85px;
 }
 
-.contentBenefitCard h4 {
-    margin: 5px;
-    font-size: inherit;
-
+.link {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
-.contentBenefitCard p {
-    margin: 5px;
-    line-height: 1.1;
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
-.contentCtaApp a {
-    margin-top: 5%;
-
+.link:hover {
+  color: #ffd300;
 }
 
-/* SECCION CTA CURSOS */
-
-
-.ctaCursos {
-    background-image: url("../assets/img/cursos2.jpg");
-    object-fit: fill;
-    background-position: 80% 35%;
-    grid-area: ctaCursos;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 5%;
+/* TITULOS */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 6vw;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-.contentCtaCursos {
-    width: 40%;
-    color: white;
-    min-height: 100vh;
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4.5vw;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4vw;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+/* TITULOS ESPECIALES */
+.specialTitle {
+  color: #fafafa;
+  font-size: auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.textoDestacado {
+  color: #ffd300;
+  font-size: auto;
+}
+
+.linkTitleSection {
+  text-decoration: none;
+  font-size: auto;
+}
+
+.linkTitleSection:hover {
+  text-decoration: underline #ffd300;
+}
+
+/* BOTONES */
+.button {
+  background-color: #ffd300;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #f3d73a;
+  color: #000000;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+footer {
+  background-image: url("../assets/img/footer.png");
+  background-position: 50% 0%;
+  min-height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  background-color: #000000;
+  grid-area: footer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+footer .footerSocialMedia {
+  display: flex;
+  gap: 20px;
+}
+footer .footerSocialMedia img {
+  width: 26px;
+  height: 26px;
+  box-shadow: 2px 2px 2px 1px rgba;
+}
+
+/*SECCION HERO */
+.link {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ffd300;
+}
+
+/* TITULOS */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 6vw;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4.5vw;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4vw;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+/* TITULOS ESPECIALES */
+.specialTitle {
+  color: #fafafa;
+  font-size: auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.textoDestacado {
+  color: #ffd300;
+  font-size: auto;
+}
+
+.linkTitleSection {
+  text-decoration: none;
+  font-size: auto;
+}
+
+.linkTitleSection:hover {
+  text-decoration: underline #ffd300;
+}
+
+/* BOTONES */
+.button {
+  background-color: #ffd300;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #f3d73a;
+  color: #000000;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+@media (max-width: 1024px) {
+  main .index section .heroHome .videoHome {
+    height: 50vh;
+    margin-top: 95px;
+  }
+  .ctaApp {
+    height: auto;
+  }
+  .ctaApp .benefitsApp {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    padding-left: 5%;
-    justify-content: center;
+  }
+  .ctaApp .imgApp {
+    display: none;
+  }
+  .ctaApp .contentCtaApp {
+    width: 100%;
+  }
+  .ctaNosotros .contentNosotros {
+    width: 100vw;
+  }
+  .ctaNosotros .imgNosotros {
+    display: none;
+  }
+  /* entre 555px y 1020px se repite la imagen hacer media query */
+  .ctaRutinas {
+    height: 100vh;
+    background-image: url("../assets/img/homeRutinasMobile .jpg");
+    background-position: 30% 50%;
+  }
+  .ctaRutinas .contentCtaRutinas {
+    width: 90%;
+  }
+  .ctaCursos {
+    object-fit: fill;
+    background-position: center;
+    text-shadow: 2px #000000;
+  }
+  .ctaCursos .contentCtaCursos {
+    width: 100%;
+    color: white;
+    min-height: 100vh;
+  }
 }
-
-/* SECCION PREGUNTAS FRECUENTES */
-
-.ctaContacto {
-    background-color: black;
-    grid-area: ctaContacto;
-    padding: 70px;
+.datosYFormularioContacto {
+  margin-top: 95px;
+  margin-bottom: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/************************************************* PAGINA RUTINAS ***********************************************************/
+.datosYFormularioContacto .datosContacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.datosYFormularioContacto .contenedorFormularioContacto {
+  display: flex;
+  flex-direction: column;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .formularioContacto {
+  margin-top: 50px;
+  width: 70vw;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .formularioContacto .formulario .button {
+  width: 50%;
+}
 
 .galeriaActividades {
-    grid-area: galeriaActividades;
-    background-color: #ffd300;
-    width: 100vw;
-    height: auto;
-    margin: 95px 0 0 0;
-    display: grid;
-    overflow: hidden;
+  background-color: #202028;
+  width: 100vw;
+  height: 100vh;
 }
-
-.contentGaleriaActividades {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 20%);
-    gap: 0px;
-}
-
-
-.imgGaleriaRutinas {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-
-
-/* actividades */
-.cardio {
-    grid-column: 1/3;
-    grid-row: 1/3;
-    position: relative;
-    display: inline-block;
-
-}
-
-.boxeo {
-    grid-column: 3/5;
-    grid-row: 1/2;
-    width: fill;
-}
-
-.natacion {
-    grid-column: 5/7;
-    width: fit-content;
-}
-
-.kids {
-    grid-row: 5/6;
-    grid-column: 1/3;
-    width: fit-content;
-
-}
-
-.mayores {
-    grid-column: 3/5;
-    grid-row: 5/6;
-    width: fit-content;
-
-}
-
-.outdoor {
-    grid-row: 5/6;
-    grid-column: 5/7;
-    width: fit-content;
-
-}
-
-.cuerpoMente {
-    grid-row: 3/5;
-    grid-column: 3/7;
-    width: fit-content;
-
-}
-
-.rehabilitacion {
-    grid-column: 5/7;
-    width: fit-content;
-    position: relative;
-    display: inline-block;
-}
-
-.crossfit {
-    width: fit-content;
-    grid-row: 3/4;
-    grid-column: 1/3;
-}
-
-.home {
-    grid-column: 1/3;
-    width: fit-content;
-}
-
-.musculacion {
-    grid-column: 3/5;
-    grid-row: 2/3;
-
-}
-
-/* actividades on hover */
-
-.textoSuperpuesto {
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    width: 100%;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 900;
-    opacity: 0;
-    margin: 0px;
-    color: white;
-}
-
-.contenedor {
-    filter: grayscale(50%);
-}
-
-.contenedor:hover {
-    filter: grayscale(100%);
-    z-index: 20;
-}
-
-.contenedor:hover .textoSuperpuesto {
-    opacity: 1;
-    color: #ffffff;
-    /*TODO: bsucar la forma que sea #ffd300*/
-    z-index: 30;
-    text-shadow: 1px 1px 2px black;
-
-
-}
-
-
-
-
-/************************************************* PAGINA CURSOS  ***********************************************************/
-
-
-.galeriaCursos {
-    width: 100vw;
-
-
+.galeriaActividades .contentGaleriaActividades {
+  height: 100%;
 }
 
 .contentGaleriaCursos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 95px;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
 }
 
-
-.imgGaleriaCursos {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
+.historia .bannerHistoria {
+  display: flex;
+  flex-direction: column;
+}
+.historia .bannerHistoria .imgBannerHistoria {
+  width: 100vw;
+}
+.historia .bannerHistoria .contentBanner {
+  width: 100vw;
 }
 
+main {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+main .heroHome {
+  grid-area: heroHome;
+  padding: 0px;
+  margin: 0px;
+}
+main .heroHome .videoHome {
+  object-fit: fill;
+  width: 100%;
+  margin: 0px;
+}
+main .heroHome .contentHeroHome {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  height: auto;
+  margin-top: -20%;
+  z-index: 1;
+  text-align: center;
+  color: #fafafa;
+}
 
+/* SECCION CTA NOSOTROS */
+.ctaNosotros {
+  grid-area: ctaNosotros;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  margin: 0px;
+  padding: 0px;
+}
+.ctaNosotros .imgNosotros {
+  width: 50vw;
+  background-image: url("../assets/img/gimnasio-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.ctaNosotros .contentNosotros {
+  background-color: #ededed;
+  background-size: cover;
+  opacity: 1;
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-/************************************************* PAGINA NOSOTROS ***********************************************************/
-.historia {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
+/* SECCION CTA RUTINAS */
+.ctaRutinas {
+  background-image: url("../assets/img/homeRutinas.jpg");
+  background-position: 50% 35%;
+  max-width: 100%;
+}
+.ctaRutinas .contentCtaRutinas {
+  width: 30%;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 5%;
+  justify-content: center;
+}
+.ctaRutinas .contentCtaRutinas .textPadding {
+  max-width: 90%;
+}
+
+/* SECCION CTA APP */
+.ctaApp {
+  background-color: #d2d2d2;
+  grid-area: ctaApp;
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+.ctaApp .contentCtaApp {
+  background-color: #ededed;
+  background-size: cover;
+  opacity: 0.8;
+  width: 50vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ctaApp .contentCtaApp .benefitsApp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 5%;
+}
+.ctaApp .contentCtaApp .benefitsApp .benefitCard {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  line-height: 1;
+  gap: 10px;
+}
+.ctaApp .contentCtaApp .benefitsApp .benefitCard .icon {
+  width: 36px;
+  height: 36px;
+}
+.ctaApp .contentCtaApp .benefitsApp .benefitCard .imageBenefitCard {
+  display: flex;
+  align-items: flex-start;
+}
+.ctaApp .contentCtaApp .benefitsApp .benefitCard .contentBenefitCard h4 {
+  margin: 5px;
+  font-size: inherit;
+}
+.ctaApp .contentCtaApp .benefitsApp .benefitCard .contentBenefitCard p {
+  margin: 5px;
+  line-height: 1.1;
+}
+.ctaApp .contentCtaApp .benefitsApp .benefitCard .contentCtaApp a {
+  margin-top: 5%;
+}
+.ctaApp .imgApp {
+  width: 50%;
+  background-image: url("../assets/img/homeApp.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* SECCION CTA CURSOS */
+.ctaCursos {
+  background-image: url("../assets/img/cursos2.jpg");
+  object-fit: fill;
+  background-position: 80% 35%;
+  grid-area: ctaCursos;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
+}
+.ctaCursos .contentCtaCursos {
+  width: 40%;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 5%;
+  justify-content: center;
+}
+
+/* SECCION PREGUNTAS FRECUENTES */
+.ctaContacto {
+  background-color: black;
+  padding: 70px;
+}
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ffd300;
+}
+
+/* TITULOS */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 6vw;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4.5vw;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4vw;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+/* TITULOS ESPECIALES */
+.specialTitle {
+  color: #fafafa;
+  font-size: auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.textoDestacado {
+  color: #ffd300;
+  font-size: auto;
+}
+
+.linkTitleSection {
+  text-decoration: none;
+  font-size: auto;
+}
+
+.linkTitleSection:hover {
+  text-decoration: underline #ffd300;
+}
+
+/* BOTONES */
+.button {
+  background-color: #ffd300;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #f3d73a;
+  color: #000000;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.galeriaActividades {
+  grid-area: galeriaActividades;
+  background-color: #ffd300;
+  width: 100vw;
+  height: auto;
+  margin: 95px 0 0 0;
+  display: grid;
+  overflow: hidden;
+}
+.galeriaActividades .contentGaleriaActividades {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 20%);
+  gap: 0px;
+  /* actividades */
+  /* actividades on hover */
+}
+.galeriaActividades .contentGaleriaActividades .imgGaleriaRutinas {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.galeriaActividades .contentGaleriaActividades .cardio {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  position: relative;
+  display: inline-block;
+}
+.galeriaActividades .contentGaleriaActividades .boxeo {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  width: fill;
+}
+.galeriaActividades .contentGaleriaActividades .natacion {
+  grid-column: 5/7;
+  width: fit-content;
+}
+.galeriaActividades .contentGaleriaActividades .kids {
+  grid-row: 5/6;
+  grid-column: 1/3;
+  width: fit-content;
+}
+.galeriaActividades .contentGaleriaActividades .mayores {
+  grid-column: 3/5;
+  grid-row: 5/6;
+  width: fit-content;
+}
+.galeriaActividades .contentGaleriaActividades .outdoor {
+  grid-row: 5/6;
+  grid-column: 5/7;
+  width: fit-content;
+}
+.galeriaActividades .contentGaleriaActividades .cuerpoMente {
+  grid-row: 3/5;
+  grid-column: 3/7;
+  width: fit-content;
+}
+.galeriaActividades .contentGaleriaActividades .rehabilitacion {
+  grid-column: 5/7;
+  width: fit-content;
+  position: relative;
+  display: inline-block;
+}
+.galeriaActividades .contentGaleriaActividades .crossfit {
+  width: fit-content;
+  grid-row: 3/4;
+  grid-column: 1/3;
+}
+.galeriaActividades .contentGaleriaActividades .home {
+  grid-column: 1/3;
+  width: fit-content;
+}
+.galeriaActividades .contentGaleriaActividades .musculacion {
+  grid-column: 3/5;
+  grid-row: 2/3;
+}
+.galeriaActividades .contentGaleriaActividades .textoSuperpuesto {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0;
+  visibility: hidden;
+  margin: 0px;
+  color: #ffd300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease-out;
+}
+.galeriaActividades .contentGaleriaActividades .contenedor {
+  filter: grayscale(50%);
+}
+.galeriaActividades .contentGaleriaActividades .contenedor:hover .textoSuperpuesto {
+  opacity: 1;
+  text-shadow: 1px 1px 2px black;
+  visibility: visible;
+}
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ffd300;
+}
+
+/* TITULOS */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 6vw;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4.5vw;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4vw;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+/* TITULOS ESPECIALES */
+.specialTitle {
+  color: #fafafa;
+  font-size: auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.textoDestacado {
+  color: #ffd300;
+  font-size: auto;
+}
+
+.linkTitleSection {
+  text-decoration: none;
+  font-size: auto;
+}
+
+.linkTitleSection:hover {
+  text-decoration: underline #ffd300;
+}
+
+/* BOTONES */
+.button {
+  background-color: #ffd300;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #f3d73a;
+  color: #000000;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+main section {
+  width: 100vw;
+}
+main section .contentGaleriaCursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 95px;
+}
+main section .contentGaleriaCursos .contenedor {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+main section .contentGaleriaCursos .contenedor .imgGaleriaCursos {
+  width: 100%;
+  height: 100%;
+}
+main section .contentGaleriaCursos .textoSuperpuesto {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0;
+  visibility: hidden;
+  margin: 0px;
+  color: #ffd300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease-out;
+}
+main section .contentGaleriaCursos .contenedor {
+  filter: grayscale(50%);
+}
+main section .contentGaleriaCursos .contenedor:hover .textoSuperpuesto {
+  opacity: 1;
+  text-shadow: 1px 1px 2px black;
+  visibility: visible;
+}
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #ffd300;
+}
+
+/* TITULOS */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 6vw;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4.5vw;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4vw;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+/* TITULOS ESPECIALES */
+.specialTitle {
+  color: #fafafa;
+  font-size: auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.textoDestacado {
+  color: #ffd300;
+  font-size: auto;
+}
+
+.linkTitleSection {
+  text-decoration: none;
+  font-size: auto;
+}
+
+.linkTitleSection:hover {
+  text-decoration: underline #ffd300;
+}
+
+/* BOTONES */
+.button {
+  background-color: #ffd300;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #f3d73a;
+  color: #000000;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
 }
 
 .heroNosotros {
-    max-width: 100vw;
-    min-height: 75vh;
-    background-image: url("../assets/img/nosotrosHero.jpg");
-    background-size: 100%;
-    background-position: 30% 30%;
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-    margin-top: 95px;
+  max-width: 100vw;
+  min-height: 75vh;
+  background-image: url("../assets/img/nosotrosHero.jpg");
+  background-size: 100%;
+  background-position: 30% 30%;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  margin-top: 95px;
 }
 
 .bannerRedesSociales {
-    background: rgb(250, 207, 2);
-    background: linear-gradient(90deg, rgba(250, 207, 2, 1) 0%, rgba(255, 211, 0, 1) 35%, rgba(214, 177, 0, 1) 100%);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: rgb(250, 207, 2);
+  background: linear-gradient(90deg, rgb(250, 207, 2) 0%, rgb(255, 211, 0) 35%, rgb(214, 177, 0) 100%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-.contentBanner {
-    background-color: #fafafa;
-    background-size: cover;
-    width: 50vw;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.historia {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.historia .bannerHistoria {
+  display: flex;
+}
+.historia .bannerHistoria .contentBanner {
+  background-color: #fafafa;
+  background-size: cover;
+  width: 50vw;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.historia .bannerHistoria .imgBannerHistoria {
+  width: 50vw;
 }
 
-.imgBannerHistoria {
-    width: 50vw;
+.link {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
-.bannerHistoria {
-    display: flex;
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
+.link:hover {
+  color: #ffd300;
+}
 
+/* TITULOS */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 6vw;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4.5vw;
+}
 
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4vw;
+}
 
-/************************************************* PAGINA CONTACTO ***********************************************************/
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+/* TITULOS ESPECIALES */
+.specialTitle {
+  color: #fafafa;
+  font-size: auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.textoDestacado {
+  color: #ffd300;
+  font-size: auto;
+}
+
+.linkTitleSection {
+  text-decoration: none;
+  font-size: auto;
+}
+
+.linkTitleSection:hover {
+  text-decoration: underline #ffd300;
+}
+
+/* BOTONES */
+.button {
+  background-color: #ffd300;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #f3d73a;
+  color: #000000;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.datosYFormularioContacto h2 {
+  margin-top: 90px;
+}
 
 .datosYFormularioContacto {
-    width: 100vw;
-    padding: 0%;
-    margin: 0%;
-    height: auto;
-    background-color: #000000;
-
+  width: 100vw;
+  padding: 0%;
+  margin: 0%;
+  height: auto;
+  background-color: #000000;
 }
-
-.datosYFormularioContacto p {
-    color: #b4b4b4;
-
+.datosYFormularioContacto .contenedorFormularioContacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #000000;
 }
-
-
-.contenedorFormularioContacto {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 50px;
-    background-color: #000000;
-
+.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.contenedorDatosContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: start;
+  align-items: start;
+  padding: 0px;
+  row-gap: 10px;
+  column-gap: 10px;
 }
-
-.datosContacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: start;
-    align-items: start;
-    padding: 0px;
-    row-gap: 10px;
-    column-gap: 10px;
-
-
+.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto .datosYFormularioContacto p {
+  color: #b4b4b4;
 }
-
-.info {
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    gap: 10px;
+.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto .info {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
 }
-
-.info img {
-    display: flex;
-    align-items: flex-start;
-    opacity: 25%;
-    width: 26px;
-    height: 26px;
+.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto .info img {
+  display: flex;
+  align-items: flex-start;
+  opacity: 25%;
+  width: 26px;
+  height: 26px;
 }
-
-.contentTarjetaConctacto h4 {
-    margin: 5px;
-
+.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto .contentTarjetaConctacto h4 {
+  margin: 5px;
 }
-
-.contentTarjetaContacto p {
-    margin: 5px;
-    line-height: 1;
-    font-size: 0.5rem;
+.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto .contentTarjetaContacto p {
+  margin: 5px;
+  line-height: 1;
+  font-size: 0.5rem;
 }
-
+.datosYFormularioContacto .contenedorFormularioContacto .formularioContacto {
+  width: 45%;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .formularioContacto .formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 0px;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .inputFormulario {
+  background-color: #202028;
+  width: 80%;
+  height: 2rem;
+  border: 0px;
+  padding: 5px;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .formularioContacto form label {
+  display: none;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .formularioContacto form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .inputFormulario:focus {
+  background-color: #222222;
+  border: 0px;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .formulario .button {
+  width: 18%;
+}
 
 /* formulario de contacto */
-.datosYFormularioContacto h2 {
-    margin-top: 90px;
+.link {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
-.formularioContacto {
-    width: 45%;
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
-.formulario {
+.link:hover {
+  color: #ffd300;
+}
+
+/* TITULOS */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 6vw;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4.5vw;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 4vw;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  color: #17191e;
+  font-weight: 800;
+  font-size: 3vw;
+}
+
+/* TITULOS ESPECIALES */
+.specialTitle {
+  color: #fafafa;
+  font-size: auto;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.textoDestacado {
+  color: #ffd300;
+  font-size: auto;
+}
+
+.linkTitleSection {
+  text-decoration: none;
+  font-size: auto;
+}
+
+.linkTitleSection:hover {
+  text-decoration: underline #ffd300;
+}
+
+/* BOTONES */
+.button {
+  background-color: #ffd300;
+  color: black;
+  border-radius: 25px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #f3d73a;
+  color: #000000;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+@media (max-width: 1024px) {
+  main .index section .heroHome .videoHome {
+    height: 50vh;
+    margin-top: 95px;
+  }
+  .ctaApp {
+    height: auto;
+  }
+  .ctaApp .benefitsApp {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    border: 0px;
-}
-
-.formulario .button {
-    width: 18%;
-}
-
-
-.formularioContacto form label {
+  }
+  .ctaApp .imgApp {
     display: none;
+  }
+  .ctaApp .contentCtaApp {
+    width: 100%;
+  }
+  .ctaNosotros .contentNosotros {
+    width: 100vw;
+  }
+  .ctaNosotros .imgNosotros {
+    display: none;
+  }
+  /* entre 555px y 1020px se repite la imagen hacer media query */
+  .ctaRutinas {
+    height: 100vh;
+    background-image: url("../assets/img/homeRutinasMobile .jpg");
+    background-position: 30% 50%;
+  }
+  .ctaRutinas .contentCtaRutinas {
+    width: 90%;
+  }
+  .ctaCursos {
+    object-fit: fill;
+    background-position: center;
+    text-shadow: 2px #000000;
+  }
+  .ctaCursos .contentCtaCursos {
+    width: 100%;
+    color: white;
+    min-height: 100vh;
+  }
+}
+.datosYFormularioContacto {
+  margin-top: 95px;
+  margin-bottom: 50px;
+}
+.datosYFormularioContacto .datosContacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.datosYFormularioContacto .contenedorFormularioContacto {
+  display: flex;
+  flex-direction: column;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .formularioContacto {
+  margin-top: 50px;
+  width: 70vw;
+}
+.datosYFormularioContacto .contenedorFormularioContacto .formularioContacto .formulario .button {
+  width: 50%;
 }
 
-.formularioContacto form textarea {
-    resize: vertical;
-    min-height: 100px;
+.galeriaActividades {
+  background-color: #202028;
+  width: 100vw;
+  height: 100vh;
+}
+.galeriaActividades .contentGaleriaActividades {
+  height: 100%;
 }
 
-.inputFormulario {
-    background-color: #202028;
-    width: 80%;
-    height: 2rem;
-    border: 0px;
-    padding: 5px;
+.contentGaleriaCursos {
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
 }
 
-
-.inputFormulario:focus {
-    background-color: #222222;
-    border: 0px;
+.historia .bannerHistoria {
+  display: flex;
+  flex-direction: column;
+}
+.historia .bannerHistoria .imgBannerHistoria {
+  width: 100vw;
+}
+.historia .bannerHistoria .contentBanner {
+  width: 100vw;
 }
 
-
-
-/************************************************* MEDIA QUERYS ***********************************************************/
-@media (max-width: 1024px) {
-    .videoHome {
-        height: 50vh;
-        margin-top: 95px;
-    }
-
-
-
-    .benefitsApp {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .contentNosotros {
-        width: 100vw;
-    }
-
-    .imgNosotros {
-        display: none;
-    }
-
-    /* entre 555px y 1020px se repite la imagen hacer media query */
-    .ctaRutinas {
-        height: 100vh;
-        background-image: url("../assets/img/homeRutinasMobile\ .jpg");
-        background-position: 30% 50%;
-
-    }
-
-    .contentCtaRutinas {
-        width: 90%;
-    }
-
-    .ctaApp {
-        height: auto;
-    }
-
-    .imgApp {
-        display: none;
-    }
-
-    .contentCtaApp {
-        width: 100%;
-    }
-
-    .ctaCursos {
-        object-fit: fill;
-        background-position: center;
-        text-shadow: 2px #000000;
-    }
-
-    .contentCtaCursos {
-        width: 100%;
-        color: white;
-        min-height: 100vh;
-
-    }
-
-    .datosContacto {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contenedorFormularioContacto {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .datosYFormularioContacto {
-        margin-top: 95px;
-        margin-bottom: 50px;
-    }
-
-    .formularioContacto {
-        margin-top: 50px;
-        width: 70vw;
-    }
-
-
-    .formulario .button {
-        width: 50%;
-    }
-
-    .galeriaActividades {
-        background-color: #202028;
-        width: 100vw;
-        height: 100vh;
-    }
-
-    .contentGaleriaCursos {
-        grid-template-columns: 1fr 1fr;
-        width: 100vw;
-    }
-
-    .bannerHistoria {
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imgBannerHistoria {
-        width: 100vw;
-    }
-
-    .contentBanner {
-        width: 100vw;
-    }
-}
+/*# sourceMappingURL=style.css.map */

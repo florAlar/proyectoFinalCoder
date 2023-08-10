@@ -1,0 +1,133 @@
+
+.galeriaActividades {
+    grid-area: galeriaActividades;
+    background-color: $colorDestacado;
+    width: 100vw;
+    height: auto;
+    margin: 95px 0 0 0;
+    display: grid;
+    overflow: hidden;
+
+    .contentGaleriaActividades {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 20%);
+        gap: 0px;
+
+        .imgGaleriaRutinas {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+       
+
+        /* actividades */
+        .cardio {
+            grid-column: 1/3;
+            grid-row: 1/3;
+            position: relative;
+            display: inline-block;
+
+        }
+
+        .boxeo {
+            grid-column: 3/5;
+            grid-row: 1/2;
+            width: fill;
+        }
+
+        .natacion {
+            grid-column: 5/7;
+            width: fit-content;
+        }
+
+        .kids {
+            grid-row: 5/6;
+            grid-column: 1/3;
+            width: fit-content;
+
+        }
+
+        .mayores {
+            grid-column: 3/5;
+            grid-row: 5/6;
+            width: fit-content;
+
+        }
+
+        .outdoor {
+            grid-row: 5/6;
+            grid-column: 5/7;
+            width: fit-content;
+
+        }
+
+        .cuerpoMente {
+            grid-row: 3/5;
+            grid-column: 3/7;
+            width: fit-content;
+
+        }
+
+        .rehabilitacion {
+            grid-column: 5/7;
+            width: fit-content;
+            position: relative;
+            display: inline-block;
+        }
+
+        .crossfit {
+            width: fit-content;
+            grid-row: 3/4;
+            grid-column: 1/3;
+        }
+
+        .home {
+            grid-column: 1/3;
+            width: fit-content;
+        }
+
+        .musculacion {
+            grid-column: 3/5;
+            grid-row: 2/3;
+
+        }
+
+        /* actividades on hover */
+
+        .textoSuperpuesto {
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            opacity: 0;
+            visibility: hidden;
+            margin: 0px;            
+            color: $colorDestacado;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba($color: #000000, $alpha: 0.5);
+            transition: all 500ms ease-out;
+
+            
+            
+        }
+
+        .contenedor {
+            filter: grayscale(50%);
+        }
+
+        .contenedor:hover .textoSuperpuesto {
+           opacity: 1;            
+            text-shadow: 1px 1px 2px black;                      
+            visibility: visible;            
+        }
+
+    }
+}

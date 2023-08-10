@@ -1,0 +1,51 @@
+@import "global";
+
+
+.heroNosotros {
+    max-width: 100vw;
+    min-height: 75vh;
+    background-image: url("../assets/img/nosotrosHero.jpg");
+    background-size: 100%;
+    background-position: 30% 30%;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin-top: 95px;
+}
+
+.bannerRedesSociales {
+    background: rgb(250, 207, 2);
+    background: linear-gradient(90deg, rgba(250, 207, 2, 1) 0%, rgba(255, 211, 0, 1) 35%, rgba(214, 177, 0, 1) 100%);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.historia {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .bannerHistoria {
+        display: flex;
+
+        .contentBanner {
+            background-color: #fafafa;
+            background-size: cover;
+            width: 50vw;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .imgBannerHistoria {
+            width: 50vw;
+        }
+
+    }
+}
