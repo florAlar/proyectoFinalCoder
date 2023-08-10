@@ -77,12 +77,19 @@
     .datosYFormularioContacto {
         margin-top: 95px;
         margin-bottom: 50px;
-
-        .datosContacto {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
+        .contenedorFormularioContacto{
+            .contenedorDatosContacto{
+                .datosContacto {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+    
+            }
         }
+        
+
+        
 
         .contenedorFormularioContacto {
             display: flex;
@@ -90,7 +97,9 @@
 
             .formularioContacto {
                 margin-top: 50px;
-                width: 70vw;
+                margin-left: 50px;
+                width: 90vw;
+                
 
                 .formulario .button {
                     width: 50%;
@@ -98,8 +107,6 @@
             }
 
         }
-
-
 
     }
 
