@@ -31,6 +31,7 @@
 
     .bannerHistoria {
         display: flex;
+        flex-direction: row;
 
         .contentBanner {
             background-color: #fafafa;

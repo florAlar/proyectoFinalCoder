@@ -1,7 +1,7 @@
 @import "global";
 
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     main .index section {
         .heroHome {
             .videoHome {
@@ -15,14 +15,17 @@
 
         height: auto;
 
-        .benefitsApp {
-            display: flex;
-            flex-direction: column;
+        .contentCtaApp {
+            .benefitsApp {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         .imgApp {
             display: none;
         }
+
 
         .contentCtaApp {
             width: 100%;
@@ -44,8 +47,8 @@
 
     .ctaRutinas {
         height: 100vh;
-        background-image: url("../assets/img/homeRutinasMobile\ .jpg");
-        background-position: 30% 50%;
+        background-image: url("../assets/img/homeRutinas.jpg");
+        background-position: 70% 40%;
 
         .contentCtaRutinas {
             width: 90%;
@@ -69,73 +72,86 @@
     }
 
 
-}
 
 
+    .datosYFormularioContacto {
+        margin-top: 95px;
+        margin-bottom: 50px;
 
-
-
-.datosYFormularioContacto {
-    margin-top: 95px;
-    margin-bottom: 50px;
-
-    .datosContacto {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contenedorFormularioContacto {
-        display: flex;
-        flex-direction: column;
-
-        .formularioContacto {
-            margin-top: 50px;
-            width: 70vw;
-
-            .formulario .button {
-                width: 50%;
-            }
+        .datosContacto {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
+        .contenedorFormularioContacto {
+            display: flex;
+            flex-direction: column;
+
+            .formularioContacto {
+                margin-top: 50px;
+                width: 70vw;
+
+                .formulario .button {
+                    width: 50%;
+                }
+            }
+
+        }
+
+
+
     }
 
-
-
-}
-
     .galeriaActividades {
-        background-color: #202028;
+        background-color: $fondoOscuro;
         width: 100vw;
         height: 100vh;
-        .contentGaleriaActividades{
+
+        .contentGaleriaActividades {
             height: 100%;
         }
     }
 
-    .contentGaleriaCursos {
-        grid-template-columns: 1fr 1fr;
-        width: 100vw;
+    .galeríaCursos {
+        
+        
+        background-color: $fondoOscuro;
+
+        .contentGaleriaCursos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) ;
+            
+        }
+
     }
 
-    .historia{
+
+    .historia {
         .bannerHistoria {
 
             display: flex;
             flex-direction: column;
+
             .imgBannerHistoria {
                 width: 100vw;
             }
+
             .contentBanner {
                 width: 100vw;
             }
-        
+
 
         }
 
     }
-    
 
-    
+    .heroNosotros{
+        background-size: cover;
+        
+    }
 
-    
+
+
+
+}
