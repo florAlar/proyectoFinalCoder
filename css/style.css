@@ -586,16 +586,15 @@ h4 {
   /* entre 555px y 1020px se repite la imagen hacer media query */
   .ctaRutinas {
     height: 100vh;
-    background-image: url("../assets/img/homeRutinas.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/homeRutinas.jpg");
     background-position: 70% 40%;
   }
   .ctaRutinas .contentCtaRutinas {
     width: 90%;
   }
   .ctaCursos {
-    object-fit: fill;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/cursos2.jpg");
     background-position: center;
-    text-shadow: 2px #000000;
   }
   .ctaCursos .contentCtaCursos {
     width: 100%;
@@ -1839,16 +1838,15 @@ h4 {
   /* entre 555px y 1020px se repite la imagen hacer media query */
   .ctaRutinas {
     height: 100vh;
-    background-image: url("../assets/img/homeRutinas.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/homeRutinas.jpg");
     background-position: 70% 40%;
   }
   .ctaRutinas .contentCtaRutinas {
     width: 90%;
   }
   .ctaCursos {
-    object-fit: fill;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/cursos2.jpg");
     background-position: center;
-    text-shadow: 2px #000000;
   }
   .ctaCursos .contentCtaCursos {
     width: 100%;

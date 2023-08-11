@@ -47,8 +47,11 @@
 
     .ctaRutinas {
         height: 100vh;
-        background-image: url("../assets/img/homeRutinas.jpg");
+        background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/homeRutinas.jpg");
         background-position: 70% 40%;
+        
 
         .contentCtaRutinas {
             width: 90%;
@@ -59,9 +62,11 @@
 
 
     .ctaCursos {
-        object-fit: fill;
+        
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../assets/img/cursos2.jpg");
         background-position: center;
-        text-shadow: 2px #000000;
 
         .contentCtaCursos {
             width: 100%;
