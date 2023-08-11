@@ -20,7 +20,7 @@ h1 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 3.5em;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -29,7 +29,7 @@ h2 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4.5vw;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 2em;
 }
 
 h4 {
@@ -45,7 +45,7 @@ h4 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 1.5em;
 }
 
 /* TITULOS ESPECIALES */
@@ -85,6 +85,91 @@ h4 {
 .button:hover {
   background-color: #f3d73a;
   color: #000000;
+}
+
+.botonNeon {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffd300;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botonNeon:hover {
+  background: #ffd300;
+  box-shadow: 0 0 10px #ffd300;
+  transition-delay: 1s;
+  color: #000;
+  border-radius: 10px;
+}
+
+.botonNeon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffd300);
+  transition-delay: 0.5s;
+}
+
+.botonNeon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffd300);
+  transition-delay: 0.25s;
+}
+
+.botonNeon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 .icon {
@@ -116,7 +201,7 @@ h1 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 3.5em;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -125,7 +210,7 @@ h2 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4.5vw;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -133,7 +218,7 @@ h3 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 2em;
 }
 
 h4 {
@@ -141,7 +226,7 @@ h4 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 1.5em;
 }
 
 /* TITULOS ESPECIALES */
@@ -181,6 +266,91 @@ h4 {
 .button:hover {
   background-color: #f3d73a;
   color: #000000;
+}
+
+.botonNeon {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffd300;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botonNeon:hover {
+  background: #ffd300;
+  box-shadow: 0 0 10px #ffd300;
+  transition-delay: 1s;
+  color: #000;
+  border-radius: 10px;
+}
+
+.botonNeon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffd300);
+  transition-delay: 0.5s;
+}
+
+.botonNeon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffd300);
+  transition-delay: 0.25s;
+}
+
+.botonNeon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 .icon {
@@ -232,7 +402,7 @@ h1 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 3.5em;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -241,7 +411,7 @@ h2 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4.5vw;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -249,7 +419,7 @@ h3 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 2em;
 }
 
 h4 {
@@ -257,7 +427,7 @@ h4 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 1.5em;
 }
 
 /* TITULOS ESPECIALES */
@@ -297,6 +467,91 @@ h4 {
 .button:hover {
   background-color: #f3d73a;
   color: #000000;
+}
+
+.botonNeon {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffd300;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botonNeon:hover {
+  background: #ffd300;
+  box-shadow: 0 0 10px #ffd300;
+  transition-delay: 1s;
+  color: #000;
+  border-radius: 10px;
+}
+
+.botonNeon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffd300);
+  transition-delay: 0.5s;
+}
+
+.botonNeon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffd300);
+  transition-delay: 0.25s;
+}
+
+.botonNeon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 .icon {
@@ -450,6 +705,7 @@ main .heroHome .contentHeroHome {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 /* SECCION CTA RUTINAS */
@@ -467,6 +723,7 @@ main .heroHome .contentHeroHome {
   align-items: start;
   padding-left: 5%;
   justify-content: center;
+  gap: 20px;
 }
 .ctaRutinas .contentCtaRutinas .textPadding {
   max-width: 90%;
@@ -490,12 +747,14 @@ main .heroHome .contentHeroHome {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 .ctaApp .contentCtaApp .benefitsApp {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 .ctaApp .contentCtaApp .benefitsApp .benefitCard {
   display: flex;
@@ -549,6 +808,7 @@ main .heroHome .contentHeroHome {
   align-items: start;
   padding-left: 5%;
   justify-content: center;
+  gap: 20px;
 }
 
 /* SECCION PREGUNTAS FRECUENTES */
@@ -681,7 +941,7 @@ h1 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 3.5em;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -690,7 +950,7 @@ h2 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4.5vw;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -698,7 +958,7 @@ h3 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 2em;
 }
 
 h4 {
@@ -706,7 +966,7 @@ h4 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 1.5em;
 }
 
 /* TITULOS ESPECIALES */
@@ -746,6 +1006,91 @@ h4 {
 .button:hover {
   background-color: #f3d73a;
   color: #000000;
+}
+
+.botonNeon {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffd300;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botonNeon:hover {
+  background: #ffd300;
+  box-shadow: 0 0 10px #ffd300;
+  transition-delay: 1s;
+  color: #000;
+  border-radius: 10px;
+}
+
+.botonNeon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffd300);
+  transition-delay: 0.5s;
+}
+
+.botonNeon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffd300);
+  transition-delay: 0.25s;
+}
+
+.botonNeon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 .icon {
@@ -818,7 +1163,7 @@ h1 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 3.5em;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -827,7 +1172,7 @@ h2 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4.5vw;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -835,7 +1180,7 @@ h3 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 2em;
 }
 
 h4 {
@@ -843,7 +1188,7 @@ h4 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 1.5em;
 }
 
 /* TITULOS ESPECIALES */
@@ -883,6 +1228,91 @@ h4 {
 .button:hover {
   background-color: #f3d73a;
   color: #000000;
+}
+
+.botonNeon {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffd300;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botonNeon:hover {
+  background: #ffd300;
+  box-shadow: 0 0 10px #ffd300;
+  transition-delay: 1s;
+  color: #000;
+  border-radius: 10px;
+}
+
+.botonNeon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffd300);
+  transition-delay: 0.5s;
+}
+
+.botonNeon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffd300);
+  transition-delay: 0.25s;
+}
+
+.botonNeon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 .icon {
@@ -955,7 +1385,7 @@ h1 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 3.5em;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -964,7 +1394,7 @@ h2 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4.5vw;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -972,7 +1402,7 @@ h3 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 2em;
 }
 
 h4 {
@@ -980,7 +1410,7 @@ h4 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 1.5em;
 }
 
 /* TITULOS ESPECIALES */
@@ -1022,6 +1452,91 @@ h4 {
   color: #000000;
 }
 
+.botonNeon {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffd300;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botonNeon:hover {
+  background: #ffd300;
+  box-shadow: 0 0 10px #ffd300;
+  transition-delay: 1s;
+  color: #000;
+  border-radius: 10px;
+}
+
+.botonNeon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffd300);
+  transition-delay: 0.5s;
+}
+
+.botonNeon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffd300);
+  transition-delay: 0.25s;
+}
+
+.botonNeon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
 .icon {
   width: 36px;
   height: 36px;
@@ -1035,8 +1550,12 @@ h4 {
   width: 100vw;
   padding: 0%;
   margin: 0%;
+  margin-top: 95px;
   height: auto;
   background-color: #000000;
+}
+.datosYFormularioContacto .h1 {
+  flex-wrap: wrap;
 }
 .datosYFormularioContacto .contenedorFormularioContacto {
   display: flex;
@@ -1060,7 +1579,7 @@ h4 {
   row-gap: 10px;
   column-gap: 10px;
 }
-.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto .datosYFormularioContacto p {
+.datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto .tarjetaDatos p {
   color: #b4b4b4;
 }
 .datosYFormularioContacto .contenedorFormularioContacto .contenedorDatosContacto .datosContacto .info {
@@ -1136,7 +1655,7 @@ h1 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 6vw;
+  font-size: 3.5em;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -1145,7 +1664,7 @@ h2 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4.5vw;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -1153,7 +1672,7 @@ h3 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 4vw;
+  font-size: 2em;
 }
 
 h4 {
@@ -1161,7 +1680,7 @@ h4 {
   text-transform: uppercase;
   color: #17191e;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: 1.5em;
 }
 
 /* TITULOS ESPECIALES */
@@ -1201,6 +1720,91 @@ h4 {
 .button:hover {
   background-color: #f3d73a;
   color: #000000;
+}
+
+.botonNeon {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  color: #ffd300;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.botonNeon:hover {
+  background: #ffd300;
+  box-shadow: 0 0 10px #ffd300;
+  transition-delay: 1s;
+  color: #000;
+  border-radius: 10px;
+}
+
+.botonNeon span {
+  position: absolute;
+  display: block;
+}
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffd300);
+  transition-delay: 0.5s;
+}
+
+.botonNeon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffd300);
+}
+
+.botonNeon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffd300);
+  transition-delay: 0.25s;
+}
+
+.botonNeon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 .icon {

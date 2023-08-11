@@ -70,6 +70,9 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
+
+
 
       
 
@@ -99,6 +102,7 @@ main {
         align-items: start;
         padding-left: 5%;
         justify-content: center;
+        gap: 20px;
 
         .textPadding {
             max-width: 90%;
@@ -131,12 +135,14 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 20px;
 
         .benefitsApp {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
             margin-top: 5%;
+            margin-bottom: 5%;
 
             .benefitCard {
                 display: flex;
@@ -207,6 +213,7 @@ main {
         align-items: start;
         padding-left: 5%;
         justify-content: center;
+        gap: 20px;
     }
 }
 
