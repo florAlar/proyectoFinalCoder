@@ -2,11 +2,22 @@
 
 
 @media screen and (max-width: 1024px) {
+    .botonNeon{
+        border: 3px solid $colorDestacado;
+        border-radius: 50px;
+
+    }
+
     main .index section {
         .heroHome {
             .videoHome {
-                height: 50vh;
+               max-height: 100%;
+               width: auto;
                 margin-top: 95px;
+                overflow: hidden;
+                h1{
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -164,4 +175,25 @@
 
     }
 
+}
+@media (max-width: 768px) {
+    .heroHome {
+        position: relative;
+        top: 95px;        
+        
+      .contentHeroHome {
+       object-fit: cover;
+       
+        
+        video .videoHome{
+            
+            
+            object-fit: cover;
+            
+        }
+        .specialTitle {
+          font-size: 2rem;
+        }
+    }
+}
 }

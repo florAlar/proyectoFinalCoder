@@ -560,9 +560,18 @@ h4 {
 }
 
 @media screen and (max-width: 1024px) {
+  .botonNeon {
+    border: 3px solid #ffd300;
+    border-radius: 50px;
+  }
   main .index section .heroHome .videoHome {
-    height: 50vh;
+    max-height: 100%;
+    width: auto;
     margin-top: 95px;
+    overflow: hidden;
+  }
+  main .index section .heroHome .videoHome h1 {
+    font-size: 1.5rem;
   }
   .ctaApp {
     height: auto;
@@ -649,6 +658,21 @@ h4 {
   }
   .heroNosotros {
     background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .heroHome {
+    position: relative;
+    top: 95px;
+  }
+  .heroHome .contentHeroHome {
+    object-fit: cover;
+  }
+  .heroHome .contentHeroHome video .videoHome {
+    object-fit: cover;
+  }
+  .heroHome .contentHeroHome .specialTitle {
+    font-size: 2rem;
   }
 }
 main {
@@ -1812,9 +1836,18 @@ h4 {
 }
 
 @media screen and (max-width: 1024px) {
+  .botonNeon {
+    border: 3px solid #ffd300;
+    border-radius: 50px;
+  }
   main .index section .heroHome .videoHome {
-    height: 50vh;
+    max-height: 100%;
+    width: auto;
     margin-top: 95px;
+    overflow: hidden;
+  }
+  main .index section .heroHome .videoHome h1 {
+    font-size: 1.5rem;
   }
   .ctaApp {
     height: auto;
@@ -1901,6 +1934,21 @@ h4 {
   }
   .heroNosotros {
     background-size: cover;
+  }
+}
+@media (max-width: 768px) {
+  .heroHome {
+    position: relative;
+    top: 95px;
+  }
+  .heroHome .contentHeroHome {
+    object-fit: cover;
+  }
+  .heroHome .contentHeroHome video .videoHome {
+    object-fit: cover;
+  }
+  .heroHome .contentHeroHome .specialTitle {
+    font-size: 2rem;
   }
 }
 
